@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #0e004a;
+    font-family: 'montserrat';
+}
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    color: crimson;
+}
+
+h2, h3, h4, h5{
+    font-weight: bold;
+    color: crimson !important;
+    text-align: center;
+}
+
+h2>b, h3>b, h4>b, h5>b{
+    font-weight: bold;
+    -webkit-text-stroke: 1px crimson;
+    color: transparent;
+}
+
+h1>b{
+    font-size: 72px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px crimson;
+    color: transparent;
+}
+
+nav{
+    background: rgba(0, 0, 0, 0.178);
+    padding: 20px 10px !important;
+    transition: 0.5s;
+}
+
+header{
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.navbar-scroll{
+    background: #060020;
+    transition: 0.5s;
+    padding: 5px 10px !important;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
+
+a>b{
+    color: transparent;
+    -webkit-text-stroke: 0.5px crimson;
+}
+
+.navbar-brand{
+    color: crimson;
+    font-weight: bold;
+    font-size: 22px;
+}
+.medina-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-outline{
+    text-decoration: none;
+    color: crimson;
+    padding: 10px 15px;
+    border: solid 1px crimson;
+    border-radius: 50px;
+    background: #0000000f;
+}
+
+.btn-outline>a{
+    color: crimson;
+}
+
+.btn-outline:hover>a{
+    color: #0d0d0d;
+}
+
+#b{
+    color: crimson !important;
+}
+
+.btn-outline:hover{
+    transition: 0.4s;
+    background: crimson;
+    color: #0d0d0d;
+    box-shadow: 0 0 30px crimson;
+}
+
+.header-cont>p{
+    margin: 20px 5rem;
+    color: rgb(126, 126, 126);
+}
+
+.btn-float{
+    position: fixed !important;
+    bottom:1rem ;
+    right: 1rem;
+    height: 64px;
+    width: 64px;
+    padding: 10px;
+}
+
+.port-cont{
+    padding: 30px 10px;
+}
+
+a{
+    color: rgb(182, 6, 42);
+}
+
+.port-card{
+    max-width: 350px;
+    margin: 20px 10px;
+}
+
+.titu-card{
+    font-size: 24px;
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.port-card>p{
+    font-size: 12px;
+}
+
+.img-port{
+    width: 330px;
+    object-fit: contain;
+    border-radius: 14px !important;
+}
+
+.port-card>.tags>span{
+    font-size: 12px;
+    width: 30%;
+    background: crimson;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 14px;
+    color: #0e004a;
+}
+
+.conocimientos-cont{
+    padding: 50px 0px;
+}
+
+.icon{
+    box-shadow: 0 0 35px #060022;
+    max-width: 200px;
+    margin: 20px 7px;
+    border-radius: 15px;
+    padding: 20px 0px;
+}
+
+.icon>i{
+    color: crimson;
+    font-size:  100px;
+}
+
+.icon:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 35px rgb(195, 17, 53);
+    background: crimson;
+}
+
+.icon:hover>i{
+    transition: 0.3s;
+    color: #0e004a;
+}
+
+.tags{
+    flex-wrap: wrap;
+}
+
+.navbar-brand:hover{
+    color: crimson !important;
+}
+
+footer{
+    background: #060022;
+    padding: 10px 0px;
+}
+
+@media screen and (max-width:992px) {
+    .port-cont{
+        justify-content: center;
+    }
+    .port-card{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .header-cont>p{
+        margin: 20px 5px !important;
+    }
+}
+
+@media screen and (max-width:380px) {
+    h1{
+        font-size: 25px;
+    }
+    
+    h1>b{
+        font-size: 25px;
+    }
+
+    .img-port{
+        width: 200px;
+        object-fit: contain;
+        border-radius: 14px !important;
+    }
+
+    .tags>span{
+        font-size: 6px !important;
+        width: 25% !important;
+    }
+
+    .conocimientos-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .icon{
+        width: 100% !important;
+    }
+
+    .navbar-brand{
+        font-size: 12px;
+    }
+
+    footer>p{
+        font-size: 12px !important;
+    }
+}

@@ -141,12 +141,18 @@ a{
 
 .img-port{
     width: 330px;
+    height: 200px;
     object-fit: contain;
     border-radius: 14px !important;
 }
 
+.port-card:hover{
+    transition: 0.5s;
+     transform: translateY(-5%);
+}
+
 .port-card>.tags>span{
-    font-size: 12px;
+    font-size: 11px;
     width: 30%;
     background: crimson;
     padding-top: 5px;
@@ -213,6 +219,25 @@ footer{
     .header-cont>p{
         margin: 20px 5px !important;
     }
+
+    
+
+    .conocimientos-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100% !important;
+        padding: 50px 20px;
+    }
+
+    .icon{
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 50px 0px;
+    }
+
 }
 
 @media screen and (max-width:380px) {
@@ -227,6 +252,7 @@ footer{
     .img-port{
         width: 200px;
         object-fit: contain;
+        height: auto;
         border-radius: 14px !important;
     }
 
@@ -235,20 +261,8 @@ footer{
         width: 25% !important;
     }
 
-    .conocimientos-cont{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     p{
         font-size: 12px;
-    }
-
-    .icon{
-        width: 100% !important;
     }
 
     .navbar-brand{
